@@ -1,0 +1,81 @@
+button.subscribe {
+    height: 36px;
+    width: 105px;
+    color: azure;
+    font-weight: 650;
+    background-color: rgb(202, 33, 33);
+    border:  rgb(235, 233, 233);
+    border-radius: 2px;
+    cursor: pointer;  
+    margin-right: 8px;
+    transition: opacity 0.15s;
+}
+button.subscribe:hover {
+    opacity: 0.7;
+}
+button.subscribe:active {
+    opacity: 0.5;
+}
+
+
+button.join {
+    height: 36px;
+    width: 62px;
+    color: rgb(9, 148, 248);
+    font-weight: 450;
+    background-color: rgba(253, 253, 253, 0);
+    border: 1px solid rgb(9, 148, 248);
+    border-radius: 2px;
+    cursor: pointer; 
+    margin-right: 8px; 
+}
+button.join:hover {
+    color: azure;
+    background-color: rgb(9, 148, 248);
+}
+button.join:active {
+    opacity: 0.5;
+}
+
+button.tweet {
+    height: 36px;
+    width: 70px;
+    font-size: 13px;
+    font-weight: 800;
+    color: azure;
+    background-color: rgb(49, 152, 255);
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+}
+button.tweet:hover {
+    box-shadow: 0px 4px 15px rgba(44, 52, 52, 0.273);
+}
+
+button.uber {
+    color: aliceblue;
+    background-color: black;
+    font-weight: 700;
+    font-family: Arial;
+    padding: 7px 15px 7px 15px;
+    margin: 0px 0px 0px 15px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+button.uber:hover {
+    opacity: 0.8;
+}
+button.uber:active {
+    opacity: 0.6;
+}
+button.amazon {
+    color: rgb(0, 0, 0);
+    background-color: rgb(253, 194, 0);
+    padding: 0px 30px 0px 30px; 
+}
+button.github {
+    color: aliceblue;
+    background-color: green;
+    font-weight: 700;
+
+}

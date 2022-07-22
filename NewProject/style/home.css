@@ -1,0 +1,49 @@
+h1 {
+    color: deeppink;
+    font-family: "Brush Script MT";
+    font-size: 2.5cm;
+    text-align: center;
+}
+p.text { 
+    background-color: rgba(42, 6, 244, 0.266);
+    font-size: 0.7cm;
+    color: whitesmoke;
+    font-family: "Comic Sans Ms";
+}
+body {
+    /* background-image: "url()"; */
+    background-image: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button.authentication1 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+button.authentication2 {
+    background-color:sandybrown; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+button.nav {
+    background-color:rgba(118, 253, 156, 0.733); /* Green */
+    border:4mm ridge rgba(44, 208, 175, 0.668);
+    color: rgba(44, 208, 175, 0.668);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

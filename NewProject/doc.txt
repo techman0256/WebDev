@@ -1,0 +1,23 @@
+-   Some technical words
+    -elements
+    -void elements
+    -attributes
+    -entities
+    -class
+    -psuedo-class
+    -path relative/absolute
+    -
+
+-use of <span> </span> ??
+-use of <div> </div> ??
+-use of <link>
+
+
+
+**** How to ?
+-   How to add additional font in HTML ?
+
+**** Key lessons I learned about HTML
+-   whatever shows up on the page goes into body tag and
+    whatever don't shown up on the page goes into head tag
+-   Live Server won't work if DOCTYPE html structure is not defined
