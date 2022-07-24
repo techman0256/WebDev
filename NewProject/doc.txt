@@ -9,10 +9,13 @@
     -
 
 -use of <span> </span> ??
+-use of <section> </section>
 -use of <div> </div> ??
 -use of <link>
 
 
+**** What is ?
+-   What is the difference btw. inline-block element vs inline element
 
 **** How to ?
 -   How to add additional font in HTML ?
