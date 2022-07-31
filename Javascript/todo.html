@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title id="title">Your Todo App</title>
+    </head>    
+
+    <body>
+        <p>
+            Add new Task
+        </p>
+        <input id="addTask" type="text">
+        <input id="task-date" type="date">
+        <button onclick="addTodo()">Add Task</button>
+        
+        <div id="TodoList">
+
+        </div>
+
+        <script>
+            // Model Section
+            class taskNode {
+                task;
+                dueDate;
+
+                constructor(task, dueDate) {
+                    this.task = task;
+                    this.dueDate = dueDate;
+                }
+
+            }
+            let todos = [new taskNode('Get groceries', '2022-7-31'), new taskNode('Wash car', '2022-8-1'), new taskNode('Make dinner', '2022-7-30') ];
+
+
+            function deleteTodo(event) {
+                let idx = event.target.id;
+                todos.splice(idx, 1);
+                
+                displayTodo();
+            }
+
+            function addTodo() {
+                let input = document.getElementById('addTask');
+                let text = input.value;
+                let date = document.getElementById('task-date');
+                let dueDate = date.value;
+                
+                todos.push(new taskNode(text, dueDate));
+                date.value = '';
+                input.value = '';
+                displayTodo();
+            }       
+
+
+            function displayTodo() {
+
+                let list =  document.getElementById('TodoList'); 
+                list.innerText = '';
+                for (let i=0; i < todos.length; i++) {
+                    let element = document.createElement('div');
+                    element.style = 'display: inline-block';
+                    element.innerText = todos[i].task + ' ' + todos[i].dueDate;
+                    
+                    let deleteBtn = document.createElement('button');
+                    deleteBtn.innerText = 'Delete';
+                    deleteBtn.id = i;
+                    deleteBtn.onclick = deleteTodo;
+
+                    list.appendChild(deleteBtn);
+                    list.appendChild(element);
+
+                    const newline = document.createElement('br');
+                    list.appendChild(newline);
+                }
+            }
+            displayTodo();            
+
+              
+
+           
+
+            
+            
+
+        </script>
+        
+    </body>
+</html>

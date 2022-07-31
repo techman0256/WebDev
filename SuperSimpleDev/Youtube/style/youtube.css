@@ -1,11 +1,6 @@
-.searchbar {
-    font-size: 20px;    
-    margin-left: 12px;
-    display: block;
 
-}
 img.thumbnail {
-    width: 300px;
+    width: 100%;
     border: 2px solid red;
 }
 img.channel-logo {
@@ -16,11 +11,7 @@ img.channel-logo {
 
 
 
-p {
-    font-family: Arial;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+
 p.video-title {
     font-weight: bold;
     font-size: 18px;
@@ -50,13 +41,6 @@ div.thumbnail-row {
     margin-bottom: 5px;
 }
 
-div.video-preview {
-    display: inline-block;
-    border: none;
-    vertical-align: text-top;
-    width: 300px;
-    margin-right: 10px;
-}
 div.channel-logo {
     display: inline-block;
     width: 50px;
@@ -66,4 +50,10 @@ div.video-info {
     display: inline-block;
     width: 225px;
     vertical-align: text-top;
+}
+div.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
 }
