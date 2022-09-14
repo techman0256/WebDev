@@ -4,13 +4,12 @@
     </head>    
 
     <body>
-        <p>
-            Add new Task
-        </p>
+        <p>Add new Task</p>
         <input id="addTask" type="text">
         <input id="task-date" type="date">
         <button onclick="addTodo()">Add Task</button>
         
+        <p>Task List</p>
         <div id="TodoList">
 
         </div>
@@ -25,7 +24,6 @@
                     this.task = task;
                     this.dueDate = dueDate;
                 }
-
             }
             let todos = [new taskNode('Get groceries', '2022-7-31'), new taskNode('Wash car', '2022-8-1'), new taskNode('Make dinner', '2022-7-30') ];
 
